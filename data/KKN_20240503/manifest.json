@@ -1,0 +1,48 @@
+{
+  "dataset": "KKN_20240503_pcappi2km_dbz.nc",
+  "processing_code": "kkn-prep-1.0.0",
+  "notebook": "00_prepare_pcappi_for_pysteps.ipynb",
+  "created_utc": "2026-10-11T03:09:30Z",
+  "radar": "KKN",
+  "case_date_utc": "20240503",
+  "raw_files_found": 92,
+  "slots_expected": 96,
+  "missing_slots": [
+    "20240503_0400",
+    "20240503_0415",
+    "20240503_0430",
+    "20240503_0445"
+  ],
+  "failed": [],
+  "peak_time_utc": "2024-05-03 09:45:00",
+  "grid": {
+    "projection": "+proj=aeqd +lat_0=16.462500 +lon_0=102.785881 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",
+    "resolution_m": 1000.0,
+    "half_width_km": 240.0,
+    "shape_yx": [
+      481,
+      481
+    ]
+  },
+  "pcappi_height_m_above_radar": 2000.0,
+  "zerovalue_dbz": -15.0,
+  "threshold_dbz": 0.0,
+  "qc_thresholds": {
+    "ZH_ECHO_FLOOR_DBZ": 0.0,
+    "NONMET_RHOHV_MAX": 0.7,
+    "NONMET_ZH_MAX_DBZ": 25.0,
+    "SPECKLE_MIN_GATES": 12,
+    "FLARE_MIN_LEN_KM": 120.0,
+    "FLARE_ZH_MIN_DBZ": 5.0,
+    "FLARE_RHOHV_MEAN_MAX": 0.75,
+    "FLARE_VELVALID_MAX": 0.3,
+    "FLARE_PROTECT_DBZ": 45.0,
+    "FLARE_PROTECT_FRAC": 0.03
+  },
+  "basemap_sources": {
+    "boundaries": "geoBoundaries gbOpen (CC BY 4.0), https://www.geoboundaries.org",
+    "terrain": "AWS Open Data Terrain Tiles (Mapzen); SRTM/GMTED2010/ETOPO1",
+    "water": "Natural Earth (public domain)"
+  },
+  "data_credit": "Radar data: Thai Meteorological Department (TMD)"
+}
